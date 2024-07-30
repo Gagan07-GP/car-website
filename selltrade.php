@@ -50,7 +50,7 @@ if (isset($_POST['sellcar'])) {
 
         // Execute the statement
         if (mysqli_stmt_execute($stmt)) {
-            $messageSell = "Car details have been successfully submitted!";
+            $messageSell = "Thank you!Car details have been successfully submitted .We will contact you soon";
             echo '<script>alert("' . $messageSell . '"); window.location.href = "selltrade.php";</script>';
             exit();
         } else {
@@ -93,7 +93,7 @@ if (isset($_POST['tradecar'])) {
 
         // Execute the statement
         if (mysqli_stmt_execute($stmt)) {
-            $messageTrade = "Trade details have been successfully submitted!";
+            $messageTrade = "Thank you for your support!Trade details have been successfully submitted.We will contact you soon ";
             echo '<script>alert("' . $messageTrade . '"); window.location.href = "selltrade.php";</script>';
             exit();
         } else {
@@ -477,12 +477,13 @@ mysqli_close($con);
                     <input type="text" id="yourCarModel" name="yourCarModel" required>
                     <label for="yourPlateNumber">Your Plate Number:</label>
                     <input type="text" id="yourPlateNumber" name="yourPlateNumber" required>
+                    <label for="yourPlateNumber">Your Car Images</label>
+                    <input type="file" id="carImagestrade" name="carImagestrade[]" multiple required>
                     <label for="carToBuyCompany">Car to Buy Company:</label>
                     <input type="text" id="carToBuyCompany" name="carToBuyCompany" required>
                     <label for="carToBuyModel">Car to Buy Model:</label>
                     <input type="text" id="carToBuyModel" name="carToBuyModel" required>
-                    <label for="carImagestrade">Car Images:</label>
-                    <input type="file" id="carImagestrade" name="carImagestrade[]" multiple required>
+                  
                     <button type="submit" name="tradecar">Submit</button>
                 </form>
             </div>
