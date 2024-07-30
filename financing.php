@@ -138,28 +138,7 @@ $conn->close();
             color: rgb(154, 198, 238);
         }
 
-        .auth-links {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .auth-links a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 10px;
-            font-weight: bold;
-            font-size: 12px;
-            border: 3px solid white;
-            padding: 7px;
-            border-radius: 10px;
-        }
-
-        .auth-links a:hover {
-            text-decoration: none;
-            background-color: rgb(154, 198, 238);
-            color: white;
-        }
+      
 
         main {
             flex: 1;
@@ -301,10 +280,7 @@ $conn->close();
                     <a href="selltrade.php">Sell/Trade</a>
                     <a href="financing.php">Financing</a>
                 </div>
-                <div class="auth-links">
-                    <a href="login.php">Login</a>
-                    <a href="register.php">Register</a>
-                </div>
+                
             </nav>
         </div>
     </header>
